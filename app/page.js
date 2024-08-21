@@ -1,10 +1,15 @@
-import { Activity } from "lucide-react";
-import Image from "next/image";
+import Features from "@/components/Features";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col px-4 py-3">
-      <div className="flex"></div>
+    <main className="min-h-screen px-6 py-4">
+      <Header />
+      <Hero />
+      <Features />
+      <Footer />
     </main>
   );
 }
