@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import placeholderDemo from "@/public/placeholder.jpg";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -16,9 +17,11 @@ const Hero = () => {
         Your AI-Powered Guide to Smarter Course Choices
       </p>
       <div className="flex gap-5 justify-center">
-        <p className=" w-fit text-white text-[13px] py-2 px-6 rounded-md bg-[#262626] cursor-pointer hover:bg-[#404040] mt-7">
-          Get Started ⚡️
-        </p>
+        <Link href="/dashboard">
+          <p className=" w-fit text-white text-[13px] py-2 px-6 rounded-md bg-[#262626] cursor-pointer hover:bg-[#404040] mt-7">
+            Get Started ⚡️
+          </p>
+        </Link>
         <p className=" w-fit text-white text-[13px] py-2 px-6 rounded-md bg-[#262626] cursor-pointer hover:bg-[#404040] mt-7">
           Learn More
         </p>

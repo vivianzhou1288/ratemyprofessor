@@ -7,7 +7,12 @@ const Footer = () => {
       <div className="py-10 flex items-center justify-between">
         <p>© 2024 Critique</p>
         <p className="hover:text-[#59a7ce]">
-          <a href="#">Github</a>
+          <a
+            href="https://github.com/vivianzhou1288/ratemyprofessor"
+            target="_blank"
+          >
+            Github
+          </a>
         </p>
       </div>
     </div>

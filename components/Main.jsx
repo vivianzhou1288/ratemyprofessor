@@ -35,7 +35,7 @@ const Main = () => {
           {intro ? (
             <div className="mt-[120px]">
               <h1 className="dark-gradient-blue text-5xl sm:text-6xl">
-                Welcome, User
+                Welcome, Name
               </h1>
               <p className="text-3xl sm:text-4xl text-[#818183] mt-1">
                 How can we help you today?
@@ -45,13 +45,13 @@ const Main = () => {
                   <div className="card">
                     <Lightbulb color="#c2af35" />
                     <p className="mt-3">
-                      Lorem ipsum dolor, sit amet consectetur.
+                      Which teacher makes math concepts click easily?
                     </p>
                   </div>
                   <div className="card">
                     <BookOpen color="#3582c2" />
                     <p className="mt-3">
-                      Lorem ipsum dolor, sit amet consectetur.
+                      Which teacher has the best lecture notes or materials?
                     </p>
                   </div>
                 </div>
@@ -59,13 +59,13 @@ const Main = () => {
                   <div className="card">
                     <Apple color="#db3c3c" />
                     <p className="mt-3">
-                      Lorem ipsum dolor, sit amet consectetur.
+                      Which teacher provides the most detailed feedback?
                     </p>
                   </div>
                   <div className="card">
                     <ThumbsUp color="#5bc235" />
                     <p className="mt-3">
-                      Lorem ipsum dolor, sit amet consectetur.
+                      Which teacher is the most lenient with deadlines?
                     </p>
                   </div>
                 </div>

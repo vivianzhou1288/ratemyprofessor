@@ -3,6 +3,7 @@ import { Github, GraduationCap, House, PanelRightOpen, X } from "lucide-react";
 import React, { useState } from "react";
 import Logo from "@/public/logo.png";
 import Image from "next/image";
+import Link from "next/link";
 
 const Sidebar = () => {
   const [sidebar, setSidebar] = useState(false);
@@ -30,14 +31,21 @@ const Sidebar = () => {
             />
             <h1 className="text-lg font-medium">Critique</h1>
           </div>
-          <div className="mt-2 mx-3 my-2 p-2 rounded-md flex gap-3 cursor-pointer hover:bg-[#3a3c41] hover:text-[#90c5df]">
-            <House />
-            <p>Home</p>
-          </div>
-          <div className="mt-1 mx-3 my-2 p-2 rounded-md flex gap-3 cursor-pointer hover:bg-[#3a3c41] hover:text-[#90c5df]">
-            <Github />
-            <p>Repository</p>
-          </div>
+          <Link href="/">
+            <div className="mt-2 mx-3 my-2 p-2 rounded-md flex gap-3 cursor-pointer hover:bg-[#3a3c41] hover:text-[#90c5df]">
+              <House />
+              <p>Home</p>
+            </div>
+          </Link>
+          <a
+            href="https://github.com/vivianzhou1288/ratemyprofessor"
+            target="_blank"
+          >
+            <div className="mt-1 mx-3 my-2 p-2 rounded-md flex gap-3 cursor-pointer hover:bg-[#3a3c41] hover:text-[#90c5df]">
+              <Github />
+              <p>Repository</p>
+            </div>
+          </a>
           {/* Chats section */}
           <div className="mx-3 my-2 flex-1 overflow-y-auto p-2 rounded-md">
             <h1 className="mb-5">✦ Bookmarks</h1>
