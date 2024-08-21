@@ -1,5 +1,6 @@
-import { Bot, Rocket } from "lucide-react";
 import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -16,9 +17,11 @@ const Header = () => {
         <p className="p-1 cursor-pointer hover:text-[#59a7ce]">About</p>
         <p className="p-1 cursor-pointer hover:text-[#59a7ce]">Contact</p>
       </div>
-      <p className="text-white text-[12px] sm:text-[13px] py-1 px-4 rounded-md bg-[#262626] cursor-pointer hover:bg-[#404040]">
-        Get Started ⚡️
-      </p>
+      <Link href="/dashboard">
+        <p className="text-white text-[12px] sm:text-[13px] py-1 px-4 rounded-md bg-[#262626] cursor-pointer hover:bg-[#404040]">
+          Get Started ⚡️
+        </p>
+      </Link>
     </div>
   );
 };
