@@ -1,21 +1,29 @@
 "use client";
-import { X } from "lucide-react";
+import { PanelRightOpen, X } from "lucide-react";
 import React, { useState } from "react";
 
 const Sidebar = () => {
   const [sidebar, setSidebar] = useState(false);
+
+  const toggleSidebar = () => {
+    setSidebar((prev) => !prev);
+  };
+
   return (
     <>
       {sidebar ? (
-        <div className="fixed text-black bg-[#fff5ff] p-4 max-w-[270px] w-full h-full">
+        <div className="fixed text-white bg-[#24252a] p-4 max-w-[270px] w-full h-full z-50">
           <div className="flex justify-between">
-            <p>SuperNova</p>
-            <p>
-              <X />
-            </p>
+            <p>Critique</p>
+            <X onClick={toggleSidebar} className="cursor-pointer" />
           </div>
         </div>
-      ) : null}
+      ) : (
+        <PanelRightOpen
+          className="fixed cursor-pointer p-3 w-[50px] h-[50px] z-50"
+          onClick={toggleSidebar}
+        />
+      )}
     </>
   );
 };

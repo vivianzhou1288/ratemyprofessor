@@ -26,7 +26,7 @@ const Hero = () => {
       <Image
         src={placeholderDemo}
         alt="CritiqueDemoVid"
-        className="w-[70%] m-auto my-10 rounded-md"
+        className="w-[90%] m-auto my-10 rounded-md"
       />
     </div>
   );

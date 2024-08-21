@@ -13,3 +13,19 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  border: 1px solid #3d3e44;
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.row {
+  display: flex;
+}
