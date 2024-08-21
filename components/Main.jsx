@@ -1,14 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import placeholderDemo from "@/public/pfpsample.jpeg";
+import UserImg from "@/public/pfpsample.jpeg";
+import critiqueImg from "@/public/critiqueLogo.png";
 import { Apple, BookOpen, Lightbulb, Send, ThumbsUp } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 const Main = () => {
   const contentRef = useRef(null);
   const [intro, setIntro] = useState(true);
-
   useEffect(() => {
     if (contentRef.current) {
       contentRef.current.scrollTop = contentRef.current.scrollHeight;
@@ -20,7 +20,7 @@ const Main = () => {
       {/* Header */}
       <div className="fixed top-0 left-0 w-full h-[50px] flex items-center justify-end p-2 z-10">
         <Image
-          src={placeholderDemo}
+          src={UserImg}
           alt="User"
           className="h-[35px] w-[35px] rounded-full"
         />
@@ -33,7 +33,7 @@ const Main = () => {
       >
         <div className="flex-1 p-4 pb-10 text-white">
           {intro ? (
-            <div className="mt-12">
+            <div className="mt-[120px]">
               <h1 className="dark-gradient-blue text-5xl sm:text-6xl">
                 Welcome, User
               </h1>
@@ -43,13 +43,13 @@ const Main = () => {
               <div className="flex gap-3 justify-center flex-wrap mt-20">
                 <div className="row gap-3">
                   <div className="card">
-                    <Lightbulb color="yellow" />
+                    <Lightbulb color="#c2af35" />
                     <p className="mt-3">
                       Lorem ipsum dolor, sit amet consectetur.
                     </p>
                   </div>
                   <div className="card">
-                    <BookOpen color="lightblue" />
+                    <BookOpen color="#3582c2" />
                     <p className="mt-3">
                       Lorem ipsum dolor, sit amet consectetur.
                     </p>
@@ -57,13 +57,13 @@ const Main = () => {
                 </div>
                 <div className="hidden sm:flex sm:row gap-3">
                   <div className="card">
-                    <Apple color="red" />
+                    <Apple color="#db3c3c" />
                     <p className="mt-3">
                       Lorem ipsum dolor, sit amet consectetur.
                     </p>
                   </div>
                   <div className="card">
-                    <ThumbsUp />
+                    <ThumbsUp color="#5bc235" />
                     <p className="mt-3">
                       Lorem ipsum dolor, sit amet consectetur.
                     </p>
@@ -71,7 +71,41 @@ const Main = () => {
                 </div>
               </div>
             </div>
-          ) : null}
+          ) : (
+            <>
+              <div className="critiqueUser">
+                <p className="critiqueUserChat">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+              {}
+              <div className="critiqueBot">
+                <Image
+                  className="rounded-md"
+                  src={critiqueImg}
+                  width={35}
+                  alt=""
+                />
+                <p className="critiqueBotChat">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Obcaecati officiis iure minus, porro nam, maxime, maiores vel
+                  labore ipsa eveniet inventore dolores non doloremque natus
+                  dolore repellendus tenetur accusamus commodi. Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Quidem
+                  consequatur doloremque et voluptatem accusantium expedita
+                  molestias nobis pariatur, aspernatur itaque nihil a aliquam
+                  modi deleniti quo enim voluptas repudiandae? Rem.
+                </p>
+              </div>
+              {}
+              <div className="critiqueUser">
+                <p className="critiqueUserChat">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Obcaecati officiis iure nam.
+                </p>
+              </div>
+            </>
+          )}
         </div>
       </div>
 
@@ -83,7 +117,7 @@ const Main = () => {
             placeholder="Write a prompt here..."
             className="bg-[#24252a] w-full text-sm p-4 pl-12 pr-16 text-white outline-none border border-[2px] border-[#1c1d22] rounded-full"
           />
-          <div className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-[#90c5df] to-[#59a7ce] p-2 rounded-full cursor-pointer mr-3">
+          <div className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-[#0c6896] to-[#59a7ce] p-2 rounded-full cursor-pointer mr-3">
             <Send color="white" size={17} />
           </div>
         </div>
