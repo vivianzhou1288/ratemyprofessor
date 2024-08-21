@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 .gradient-blue {
-  background: linear-gradient(to right, #59a7ce, rgb(144, 197, 223), #59a7ce);
+  background: linear-gradient(to right, #59a7ce, #90c5df, #59a7ce);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .dark-gradient-blue {
-  background: linear-gradient(to right, #0c6896, rgb(77, 185, 238), #0c6896);
+  background: linear-gradient(to right, #1b83b7, rgb(77, 185, 238), #0c6896);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -20,12 +20,60 @@
 
 .card {
   border: 1px solid #3d3e44;
-  width: 200px;
+  max-width: 230px;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  background-color: #3d3e44;
 }
 
 .row {
   display: flex;
+}
+
+.prevChats {
+  background-color: #35363c;
+  padding: 7px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.prevChats:hover {
+  background-color: #2b2b30;
+}
+
+.critiqueUser {
+  display: flex;
+  align-items: start;
+  justify-content: flex-end;
+  height: auto;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.critiqueUserChat {
+  background: #3f3f46;
+  padding: 10px 10px;
+  border-radius: 5px;
+  max-width: 70%;
+}
+
+.critiqueBot {
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+  height: auto;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.critiqueBotChat {
+  background: #2e2e30;
+  padding: 10px 10px;
+  border-radius: 5px;
+  max-width: 100%;
 }

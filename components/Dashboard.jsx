@@ -6,7 +6,6 @@ const Dashboard = () => {
   return (
     <div className="text-white flex flex-row ">
       <Sidebar />
-
       <Main />
     </div>
   );
