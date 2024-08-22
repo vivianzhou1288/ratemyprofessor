@@ -1,0 +1,226 @@
+{
+    "reviews": [
+        {
+            "professor": "Dr. Emily Richardson",
+            "review": "Amazing professor! Dr. Richardson explains complex concepts in a way that is easy to understand. Highly recommend her classes.",
+            "subject": "Mathematics",
+            "stars": 5
+        },
+        {
+            "professor": "Prof. John Maxwell",
+            "review": "Engaging lecturer, but his exams are quite difficult. Make sure you attend his office hours for extra help.",
+            "subject": "Physics",
+            "stars": 4
+        },
+        {
+            "professor": "Dr. Karen Johnson",
+            "review": "I found her teaching style to be quite confusing, and she wasn't very approachable outside of class.",
+            "subject": "Chemistry",
+            "stars": 2
+        },
+        {
+            "professor": "Prof. David Miller",
+            "review": "Dr. Miller is an excellent professor with a deep knowledge of the subject. His passion for literature is contagious.",
+            "subject": "English Literature",
+            "stars": 5
+        },
+        {
+            "professor": "Dr. Susan White",
+            "review": "Decent professor, but her lectures can be dry at times. Be prepared to study a lot on your own.",
+            "subject": "Economics",
+            "stars": 3
+        },
+        {
+            "professor": "Prof. Alan Green",
+            "review": "Fantastic course! Dr. Green uses real-world examples to make the material more relatable.",
+            "subject": "Computer Science",
+            "stars": 5
+        },
+        {
+            "professor": "Dr. Lisa Brown",
+            "review": "Very knowledgeable but has a tough grading system. Make sure to keep up with the readings.",
+            "subject": "History",
+            "stars": 3
+        },
+        {
+            "professor": "Prof. Michael Davis",
+            "review": "I struggled with this class. The professor's explanations were often unclear, and the material was tough.",
+            "subject": "Biology",
+            "stars": 2
+        },
+        {
+            "professor": "Dr. Patricia Taylor",
+            "review": "One of the best professors I've had. Dr. Taylor is very approachable and always willing to help.",
+            "subject": "Philosophy",
+            "stars": 5
+        },
+        {
+            "professor": "Prof. Robert Wilson",
+            "review": "Good professor overall, but the workload was heavy. Be prepared to spend a lot of time studying.",
+            "subject": "Psychology",
+            "stars": 4
+        },
+        {
+            "professor": "Dr. Amy Scott",
+            "review": "Dr. Scott is a fantastic professor who cares deeply about her students' success.",
+            "subject": "Sociology",
+            "stars": 5
+        },
+        {
+            "professor": "Prof. William Clark",
+            "review": "The course was well-organized, but the professor could be more engaging during lectures.",
+            "subject": "Political Science",
+            "stars": 3
+        },
+        {
+            "professor": "Dr. Rebecca Lee",
+            "review": "Highly knowledgeable in her field, but her lectures are sometimes hard to follow.",
+            "subject": "Art History",
+            "stars": 3
+        },
+        {
+            "professor": "Prof. Charles Turner",
+            "review": "Dr. Turner is a brilliant mathematician, but his exams are extremely challenging.",
+            "subject": "Mathematics",
+            "stars": 4
+        },
+        {
+            "professor": "Dr. Nancy Cooper",
+            "review": "Her teaching style is very effective, and she provides great support outside of class.",
+            "subject": "Physics",
+            "stars": 5
+        },
+        {
+            "professor": "Prof. Frank Harris",
+            "review": "I enjoyed the course, but I wish the professor provided more feedback on assignments.",
+            "subject": "Environmental Science",
+            "stars": 4
+        },
+        {
+            "professor": "Dr. Jennifer Evans",
+            "review": "An outstanding professor with a passion for teaching. Her classes are both challenging and rewarding.",
+            "subject": "Chemistry",
+            "stars": 5
+        },
+        {
+            "professor": "Prof. Thomas Lewis",
+            "review": "The course material was interesting, but the professor's lectures were hard to follow.",
+            "subject": "Geography",
+            "stars": 3
+        },
+        {
+            "professor": "Dr. Linda Martin",
+            "review": "A very strict professor, but you'll learn a lot if you're willing to put in the effort.",
+            "subject": "Law",
+            "stars": 4
+        },
+        {
+            "professor": "Prof. George Adams",
+            "review": "I found his teaching style to be too fast-paced. I had to spend a lot of time reviewing the material on my own.",
+            "subject": "Statistics",
+            "stars": 2
+        },
+        {
+            "professor": "Dr. Sarah Thompson",
+            "review": "Dr. Thompson is an exceptional educator. Her enthusiasm makes learning a joy.",
+            "subject": "Literature",
+            "stars": 5
+        },
+        {
+            "professor": "Prof. Henry James",
+            "review": "Interesting course content, but the professor's grading was inconsistent.",
+            "subject": "Anthropology",
+            "stars": 3
+        },
+        {
+            "professor": "Dr. Julia Harris",
+            "review": "The professor provided clear explanations and was very responsive to questions.",
+            "subject": "Microbiology",
+            "stars": 4
+        },
+        {
+            "professor": "Prof. Edward King",
+            "review": "I enjoyed the practical applications discussed in this class. Dr. King is very knowledgeable.",
+            "subject": "Engineering",
+            "stars": 5
+        },
+        {
+            "professor": "Dr. Rachel Morgan",
+            "review": "The course was quite theoretical, and I had a hard time applying the concepts.",
+            "subject": "Philosophy",
+            "stars": 3
+        },
+        {
+            "professor": "Prof. Eric Nelson",
+            "review": "The professor was very supportive and provided plenty of resources to help with the coursework.",
+            "subject": "Psychology",
+            "stars": 4
+        },
+        {
+            "professor": "Dr. Olivia Wright",
+            "review": "A wonderful professor who really cares about her students' success.",
+            "subject": "History",
+            "stars": 5
+        },
+        {
+            "professor": "Prof. Mark Bennett",
+            "review": "Challenging course, but the professor is very knowledgeable and willing to help.",
+            "subject": "Business Administration",
+            "stars": 4
+        },
+        {
+            "professor": "Dr. Emily Parker",
+            "review": "I found the lectures to be a bit disorganized, which made it difficult to follow along.",
+            "subject": "Political Science",
+            "stars": 2
+        },
+        {
+            "professor": "Prof. Arthur Moore",
+            "review": "The professor's enthusiasm for the subject was evident, but the assignments were overwhelming.",
+            "subject": "Computer Science",
+            "stars": 3
+        },
+        {
+            "professor": "Dr. Laura Green",
+            "review": "A great professor who makes the class enjoyable and provides clear instructions.",
+            "subject": "Economics",
+            "stars": 5
+        },
+        {
+            "professor": "Prof. Steven Ward",
+            "review": "The course content was good, but the professor's teaching style didn't resonate with me.",
+            "subject": "Philosophy",
+            "stars": 3
+        },
+        {
+            "professor": "Dr. Margaret Wood",
+            "review": "Very knowledgeable professor who provides valuable insights into the subject matter.",
+            "subject": "Sociology",
+            "stars": 4
+        },
+        {
+            "professor": "Prof. Andrew Carter",
+            "review": "The lectures were engaging, and the professor was very supportive throughout the course.",
+            "subject": "Art History",
+            "stars": 5
+        },
+        {
+            "professor": "Dr. Victoria Hill",
+            "review": "I learned a lot in this course, but the workload was very heavy. Dr. Hill is a great professor.",
+            "subject": "Law",
+            "stars": 4
+        },
+        {
+            "professor": "Prof. Richard Hall",
+            "review": "The course was interesting, but the professor could be more organized in his presentations.",
+            "subject": "Engineering",
+            "stars": 3
+        },
+        {
+            "professor": "Dr. Barbara Scott",
+            "review": "One of the best professors I've ever had. Her lectures are both informative and inspiring.",
+            "subject": "Literature",
+            "stars": 5
+        }
+    ]
+}
