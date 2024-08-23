@@ -1,226 +1,226 @@
 {
     "reviews": [
         {
-            "professor": "Dr. Emily Richardson",
-            "review": "Amazing professor! Dr. Richardson explains complex concepts in a way that is easy to understand. Highly recommend her classes.",
-            "subject": "Mathematics",
-            "stars": 5
-        },
-        {
-            "professor": "Prof. John Maxwell",
-            "review": "Engaging lecturer, but his exams are quite difficult. Make sure you attend his office hours for extra help.",
-            "subject": "Physics",
-            "stars": 4
-        },
-        {
-            "professor": "Dr. Karen Johnson",
-            "review": "I found her teaching style to be quite confusing, and she wasn't very approachable outside of class.",
-            "subject": "Chemistry",
-            "stars": 2
-        },
-        {
-            "professor": "Prof. David Miller",
-            "review": "Dr. Miller is an excellent professor with a deep knowledge of the subject. His passion for literature is contagious.",
-            "subject": "English Literature",
-            "stars": 5
-        },
-        {
-            "professor": "Dr. Susan White",
-            "review": "Decent professor, but her lectures can be dry at times. Be prepared to study a lot on your own.",
-            "subject": "Economics",
-            "stars": 3
-        },
-        {
-            "professor": "Prof. Alan Green",
-            "review": "Fantastic course! Dr. Green uses real-world examples to make the material more relatable.",
+            "professor": "Prof. Walker White",
+            "review": "Review 1: The lectures were absolutely amazing. The professor was really fair and genuinely did his best to support students. Review 2: Prof. White was a very engaging lecturer. Topics were interesting and overall course was structured well. Review 3: I came into this class with zero coding experience. Walker's lectures are good and he clearly shows which review videos (which I highly recommend watching) are connected with each lecture. Labs are easy and teach the material. Assignments are very difficult (up to 20 hours), but can work with a partner. Overall recommend to learn about CS.",
             "subject": "Computer Science",
             "stars": 5
         },
         {
-            "professor": "Dr. Lisa Brown",
-            "review": "Very knowledgeable but has a tough grading system. Make sure to keep up with the readings.",
-            "subject": "History",
-            "stars": 3
+            "professor": "Prof. Kelly Delp",
+            "review": "Review 1: Easily one of the best professors I've ever had. Her lectures were extremely well planned and organized, and the homework questions were chosen well . If you can get Delp, get Delp. Review 2: Amazing lecturer, really cares about students, and is very accessible. Entertains all questions without making anyone feel silly. Final kicked my butt but course was otherwise pretty fair if you read the textbook outside of class. Review 3: The only good thing about this class is that hw is worth 30% of grade. She adjusts grade cutoffs very fairly, but that doesn't take away from the material being hard and boring. She is a nice person in general, but her lectures are terrible. She is scatterbrained and gets distracted easily, making it difficult to follow the math problems.",
+            "subject": "Physics",
+            "stars": 4.2
         },
         {
-            "professor": "Prof. Michael Davis",
-            "review": "I struggled with this class. The professor's explanations were often unclear, and the material was tough.",
-            "subject": "Biology",
-            "stars": 2
-        },
-        {
-            "professor": "Dr. Patricia Taylor",
-            "review": "One of the best professors I've had. Dr. Taylor is very approachable and always willing to help.",
-            "subject": "Philosophy",
-            "stars": 5
-        },
-        {
-            "professor": "Prof. Robert Wilson",
-            "review": "Good professor overall, but the workload was heavy. Be prepared to spend a lot of time studying.",
-            "subject": "Psychology",
-            "stars": 4
-        },
-        {
-            "professor": "Dr. Amy Scott",
-            "review": "Dr. Scott is a fantastic professor who cares deeply about her students' success.",
-            "subject": "Sociology",
-            "stars": 5
-        },
-        {
-            "professor": "Prof. William Clark",
-            "review": "The course was well-organized, but the professor could be more engaging during lectures.",
-            "subject": "Political Science",
-            "stars": 3
-        },
-        {
-            "professor": "Dr. Rebecca Lee",
-            "review": "Highly knowledgeable in her field, but her lectures are sometimes hard to follow.",
-            "subject": "Art History",
-            "stars": 3
-        },
-        {
-            "professor": "Prof. Charles Turner",
-            "review": "Dr. Turner is a brilliant mathematician, but his exams are extremely challenging.",
-            "subject": "Mathematics",
-            "stars": 4
-        },
-        {
-            "professor": "Dr. Nancy Cooper",
-            "review": "Her teaching style is very effective, and she provides great support outside of class.",
+            "professor": "Prof. Ryan Tapping",
+            "review": "Review 1: Extremely hard course but Ryan Tapping does his best to help all students. Make sure you attend all co-ops bc that's so much of your grade it will help makeup for the inevitably difficult exams. Review 2: Best professor I've had so far at Cornell. Very patient, encourages questions and makes sure you really understand the content in office hours. I loved attending office hours and thought they were extremely helpful. E&M itself is a hard subject but he explains it well in bare terms. He's very humble and open to feedback. Overall great guy. Review 3: Tappings is a very caring professor. It is very intentional that he makes 2213 an incredibly chill class. Compared to previous semester, the psets are very relaxed. The prelim is reflective of the psets and coops. Lecture wise, the demos are very cool and aids in conceptual understanding of the concepts. Honestly, no bad comments about 2213.",
             "subject": "Physics",
             "stars": 5
         },
         {
-            "professor": "Prof. Frank Harris",
-            "review": "I enjoyed the course, but I wish the professor provided more feedback on assignments.",
-            "subject": "Environmental Science",
-            "stars": 4
+            "professor": "Prof. Andrew Musser",
+            "review": "Review 1: Lectures can be a bit dry, but Musser is a helpful prof. Stay on top of the coursework and utilize resources like the textbook, office hours, and tools like unstuckstudy ai to succeed. The class has a high curve, so put in the effort and you'll do well. Review 2: This class is a mixed bag. Musser's lectures can be a slog, but staying engaged and using outside resources helps a lot. If you put in the work, the high curve makes it manageable. Just be ready for a heavy workload and don't expect to learn everything from lectures alone. Review 3: lectures are incredibly boring. i never paid attention in lecture and crammed in the last 24-48 hours and ended up pulling a B/B+ on every exam. there is a very heavy curve in the class (an 82% was an A-) which makes it okay, but can confidently say that i am not coming out of this class understanding even one small thing about gen chem.",
+            "subject": "Chemistry",
+            "stars": 1.1
         },
         {
-            "professor": "Dr. Jennifer Evans",
-            "review": "An outstanding professor with a passion for teaching. Her classes are both challenging and rewarding.",
-            "subject": "Chemistry",
+            "professor": "Prof. Robert Kleinberg",
+            "review": "Review 1: Really nice, kind of funny, uber nerdy guy. I find him charming and easy to talk to. Also have him as my faculty advisor. But, hardest class I've ever taken. Could put hours and hours into HW and OH and still get <20% on it, HW/exam medians were about 50%. Maybe worse because it was online. Also I just suck at algo, which is not his fault. Review 2: Prof. Kleinberg is one of those professors that, the more complicated the concept, the better he is at explaining it. His lectures on max flow, NP-Completeness, and Turing Machines were very helpful, while I mostly learned about greedy algorithms and DP from the book. His homeworks are definitely very challenging, with HW / Exam medians 50-60%. Review 3: He is extremely intelligent and very committed in helping his students learn the material. He can be a little brash when dealing with administrative issues in the course, but seems genuinely interested in his teaching duties. Would highly recommend taking 4820 under him if you want to seriously test your understanding of algorithms.",
+            "subject": "Computer Science",
+            "stars": 4.8
+        },
+        {
+            "professor": "Prof. Andrew Campana",
+            "review": "Review 1: Easily one of the kindest and most genuine professors I've known at Cornell. When I needed an extension, he never said no. His courses were well organized, and his lectures were always a joy to attend. I think he legitimately loves what he does and wants to share it with his students. Often went to his office hours just to chat, which was fun. Review 2: You get what you put in with Professor Campana's classes, but the content he goes over in class is so interesting it's hard not to be invested. Great lectures, great organization of course content, would highly recommend if you are interested in hearing about games and animation as a reflection of japanese popular culture!",
+            "subject": "Japanese History",
             "stars": 5
         },
         {
-            "professor": "Prof. Thomas Lewis",
-            "review": "The course material was interesting, but the professor's lectures were hard to follow.",
-            "subject": "Geography",
-            "stars": 3
-        },
-        {
-            "professor": "Dr. Linda Martin",
-            "review": "A very strict professor, but you'll learn a lot if you're willing to put in the effort.",
-            "subject": "Law",
-            "stars": 4
-        },
-        {
-            "professor": "Prof. George Adams",
-            "review": "I found his teaching style to be too fast-paced. I had to spend a lot of time reviewing the material on my own.",
+            "professor": "Prof. Florentina Bunea",
+            "review": "Review 1: She is an AMAZING professor who teaches clearly and explains the material well. I put in effort, did my work on time, and received a good grade. She has a slight accent and uses a blackboard, but overall she's an enthusiastic and kind woman. I was confused by the negative reviews I read, anyways this is a great class and professor. 100% recommend. Review 2: The class is pretty straightforward, and Bunea teaches it well. She's funny, and she's accessible through email and outside of class. She posts her lecture notes online but the lectures are still helpful as she tends to add context that is not present in her posted notes. Review 3: Lectures were always boring and unhelpful, so I learned everything on my own time to even do remotely well on exams. She can be quite funny occasionally.",
             "subject": "Statistics",
-            "stars": 2
+            "stars": 3.2
         },
         {
-            "professor": "Dr. Sarah Thompson",
-            "review": "Dr. Thompson is an exceptional educator. Her enthusiasm makes learning a joy.",
-            "subject": "Literature",
-            "stars": 5
+            "professor": "Prof. Kilian Weinberger",
+            "review": "Review 1: A great professor with excellent juggling skills! I had no prior ML experience before this class, and Kilian explained so many tough concepts in ways that just made sense. He is a master at finding helpful analogies and has a great sense of humor. I would highly recommend this class if you are someone that wants to learn the foundations of ML. Review 2: Best professor I have had. Very informative and fun lectures. Lots of material posted online. Review 3: You will not find a better ML professor. The man knows his stuff soooo well and is really good at explaining it to people who know nothing about it. He also juggled in class one time which was hilarious. I did not miss a single lecture this semester and it's so worth my time. I do not understand how anyone can rate him low.",
+            "subject": "Machine Learning",
+            "stars": 4.3
         },
         {
-            "professor": "Prof. Henry James",
-            "review": "Interesting course content, but the professor's grading was inconsistent.",
-            "subject": "Anthropology",
-            "stars": 3
-        },
-        {
-            "professor": "Dr. Julia Harris",
-            "review": "The professor provided clear explanations and was very responsive to questions.",
-            "subject": "Microbiology",
-            "stars": 4
-        },
-        {
-            "professor": "Prof. Edward King",
-            "review": "I enjoyed the practical applications discussed in this class. Dr. King is very knowledgeable.",
-            "subject": "Engineering",
-            "stars": 5
-        },
-        {
-            "professor": "Dr. Rachel Morgan",
-            "review": "The course was quite theoretical, and I had a hard time applying the concepts.",
-            "subject": "Philosophy",
-            "stars": 3
-        },
-        {
-            "professor": "Prof. Eric Nelson",
-            "review": "The professor was very supportive and provided plenty of resources to help with the coursework.",
+            "professor": "Prof. Morten Christiansen",
+            "review": "Review 1: By far one of my fave classes. Material is objectively tricky, but if you listen closely and do readings it will come together nicely and make sense. Tests are VERY fair, straight from the study guides he gives you. Christiansen is super knowledgeable, lectures are engaging. Review 2: Professor Christiansen seems like a genuine guy, but this class stinks. Completely boring slough of studies that demonstrate nothing in the end. Prelims are graded pretty harsh despite vague questions. Material is Christiansen's somewhat baseless conjectures on the origins of language. Final essay worth 50% of your grade. Avoid this class. Review 3: While Professor Christiansen seems to be a good person, I was not fond of his teaching or class. The material presented in lecture was honestly boring and it made it hard to succeed on the prelims/final. Also, the prelims were graded harshly -- in my opinion. Christiansen is very educated on his field of study but maybe try a different course.",
             "subject": "Psychology",
-            "stars": 4
+            "stars": 4.1
         },
         {
-            "professor": "Dr. Olivia Wright",
-            "review": "A wonderful professor who really cares about her students' success.",
-            "subject": "History",
-            "stars": 5
+            "professor": "Prof. Sam Tilsen",
+            "review": "Review 1: Stay away for your sanity. The only positive thing about him is he cares about Linguistics and puts a lot of work into his lectures. He shouldn't be a professor at Cornell he has no empathy for students who added the class late making their participation and homework grades lower. He will fully ignore and not respond to emails. He has a huge ego. Review 2: Professor Tilsen's lecture are pretty technical and sometimes confusing, but he is a chill guy. He obviously shows a passion for the subject, but the course isn't always taught to reflect that I feel. Homeworks are not too hard, prelims too. Although the homeworks aren't hard, I do feel that they don't really give you sufficient practice. Review 3: One of the best professors at Cornell! Incredibly sweet and funny, and a very engaging lecturer. There are some annoying things (attendance required, pop quizzes from textbook readings) but exams are straightforward. I wasn't very interested in p-side linguistics before this class (I only took it as a major requirement) but Sam made it worthwhile.",
+            "subject": "Linguistics",
+            "stars": 2.9
         },
         {
-            "professor": "Prof. Mark Bennett",
-            "review": "Challenging course, but the professor is very knowledgeable and willing to help.",
-            "subject": "Business Administration",
-            "stars": 4
+            "professor": "Prof. Kyle Harms",
+            "review": "Review 1: Loved his class! The assignments are easy if you pay attention in lecture, his demos and online documentation are basically answer keys. The group project was really interesting. He's super accommodating when it comes to the group project, too, and would push back deadlines and change requirements based on student feedback. Review 2: Generally reasonable and tries his best for students to understand how to code. Sometimes felt like I was being spoon-fed information. Lots of tedious homework. Energetic, which may be hard to endure for an 8:40am class. Review 3: Having the class at 8:40 am every Monday and Wednesday is torture. Not to mention his course style of taking attendance at this point in the day. Assignments were fine and doable but very tedious. The design journeys I get the point but it gets a little too much when done multiple times.",
+            "subject": "Information Science",
+            "stars": 2.6
         },
         {
-            "professor": "Dr. Emily Parker",
-            "review": "I found the lectures to be a bit disorganized, which made it difficult to follow along.",
-            "subject": "Political Science",
-            "stars": 2
-        },
-        {
-            "professor": "Prof. Arthur Moore",
-            "review": "The professor's enthusiasm for the subject was evident, but the assignments were overwhelming.",
+            "professor": "Prof. Michael Clarkson",
+            "review": "Review 1: Great professor, one of the best, if not the best, in the cs department. fair tests and homeworks, very knowledgable about the industry. His textbook is also great and easy to read. Review 2: Greatest CS professor I've ever had. Coming out of Muhlberger, who I liked in some ways and disliked in others, Clarkson was a breath of fresh air. IDK if I'll ever use functional programming in my job, but there's no denying how I've gone from memorizing code to actually understanding it. Take this class if you'll ever use any CS anywhere. Review 3: Michael Clarkson is a ball of glowing radiant sunshine.",
             "subject": "Computer Science",
+            "stars": 4.4
+        },
+        {
+            "professor": "Prof. Peter Frazier",
+            "review": "Review 1: Frazier is very passionate about his work and clearly enjoys teaching. His patience is second to none, and he truly cares about his students. The class was a bit challenging with the nonstop problem sets but nothing unmanageable. The TAs are a bit unresponsive on Ed, but asking Frazier questions after lecture was always an option. Great professor! Review 2: Really good lecturer. Some topics are more exciting than others. HW's don't take too long. Exams very fair. Decent class overall. Review 3: Frazier was organized and really made himself available to provide for help in the course. Though he had our good intentions in heart, I was frustrated how he often would spend great lengths of times discussing a simple problem to the point I lost the little interest I had, and began despising the course material.",
+            "subject": "ORIE",
             "stars": 3
         },
         {
-            "professor": "Dr. Laura Green",
-            "review": "A great professor who makes the class enjoyable and provides clear instructions.",
-            "subject": "Economics",
+            "professor": "Prof. David Shmoys",
+            "review": "Review 1: The GOAT of ORIE himself. Very engaging lecturer. Participation is based on how much you answer or ask in lecture, and he tries to remember everyone's names. Clear and concise lectures, will explain until students understand. Weekly graded HW and python lab sessions. Overall, not the easiest ENGRI but definitely learnt a lot. Review 2: So bad! He makes up your participation grade and gives extremely long HW every week. Combined with the fact that he can't teach and is super disrespectful in office hours. Review 3: Doesn't answer questions very well, doesn't explain material well or will be a bit snide if you have questions about something that has already been covered. Very harsh grader for homework and no collaboration allowed for homework which somewhat defeats the purpose of learning new material",
+            "subject": "ORIE",
+            "stars": 4.1
+        },
+        {
+            "professor": "Prof. Alex Townsend",
+            "review": "Review 1: Great professor. Enthusiastic about the subject. Cares about the success of his students. Review 2: MATH2940 with Professor Townsend was one of the best classes I've ever taken. His lectures were clear, funny, and constantly inspiring; his graded problems on homework assignments really challenged me to think and work outside the box; and exams were always fair. I learned a lot with him and now have a fantastic foundation for the future. Review 3: His Majesty, Alex Townsend, is THE MAN. His lectures are incredibly engaging, and he has a great sense of humor. Just don't say Hi to him in the changing room at the gym :) 2940 is a fun class, and I'd highly suggest taking it with Townsend. He drops bombs every single lecture and is extremely approachable. Cares that you learn, isn't stressful.",
+            "subject": "Mathematics",
             "stars": 5
         },
         {
-            "professor": "Prof. Steven Ward",
-            "review": "The course content was good, but the professor's teaching style didn't resonate with me.",
-            "subject": "Philosophy",
-            "stars": 3
+            "professor": "Prof. Frans Schalekamp",
+            "review": "Review 1: This class was fine but tests were hard. Unfortunately many randos who arent engineering majors that mess up the curve bc this is their hardest class. The medians were 80's which is great but also means everyone is super sweaty so you absolutely cannot be excited when your raw score is 85 like you would in any other exam ever in engineering math. Review 2: Funny guy but talks kind of slow. Lecture wasn't worth showing up to because we barely covered anything. Better off reading the textbook on your own. Review 3: Frans is funny and genuinely good lecturer. I enjoyed attending his lectures despite attendance not being mandatory. He posts the lecture slides on Canvas right after. The weekly quizzes in discussion were usually a randomly chosen HW question from the week's prior PSET. exams were VERY fair!! you will do well in this class if you pay attention!",
+            "subject": "Mathematics",
+            "stars": 4.6
         },
         {
-            "professor": "Dr. Margaret Wood",
-            "review": "Very knowledgeable professor who provides valuable insights into the subject matter.",
-            "subject": "Sociology",
-            "stars": 4
-        },
-        {
-            "professor": "Prof. Andrew Carter",
-            "review": "The lectures were engaging, and the professor was very supportive throughout the course.",
-            "subject": "Art History",
+            "professor": "Prof. Allison Koenecke",
+            "review": "Review 1: One of the best profs I've had at Cornell so far. Lectures are so interesting and have genuinely inspired me to pursue data science as a career. I enjoyed this class so much -- you learn so much technical skill while understanding the theory behind it. Loved the projects in this class, too! Review 2: the best professor I have had at Cornell. take 2950 with her if you can. makes concepts super clear and made coming to class worth it. Review 3: Professor Koenecke is very caring and has a lot of knowledge from her experiences in the industry. Her lectures are awesome and her guest lectures are great as well. The final project is cool and you learn a lot in INFO 4390. Everyone who is interested in ML or data science should take the course with prof Koenecke.",
+            "subject": "Data Science",
             "stars": 5
         },
         {
-            "professor": "Dr. Victoria Hill",
-            "review": "I learned a lot in this course, but the workload was very heavy. Dr. Hill is a great professor.",
-            "subject": "Law",
-            "stars": 4
+            "professor": "Prof. Haym Hirsh",
+            "review": "Review 1: Extremely boring lecturer and repeats himself a lot BUT nice, fair, considerate guy and he'll take the time to give you really thorough and detailed answers to questions you have. Class and material are not hard if you pay attention (go to OH), exams are easy if you memorize his slides (no surprises). Review 2: Interesting material, great test review but hard exams, and a high though non-problematic level of disorganization. This class won't suck away too much time, too. At times when coursework is particularly heavy, Hirsh will give what amounts to a several-day extension on homework, and he provides many high-quality answers on Piazza. Review 3: CS4700 was probably the worst class I took at Cornell. Everyone describes AI as an Easy A because the topics are simple, but the class is so unorganized and inconsistent that it is frustrating to prepare for it. Prof Hirsh seemed unprepared for class and his slides/problem sets had many errors. To learn similar content, take CS 2110 and CS 4780.",
+            "subject": "Artifical Intelligence",
+            "stars": 3.1
         },
         {
-            "professor": "Prof. Richard Hall",
-            "review": "The course was interesting, but the professor could be more organized in his presentations.",
-            "subject": "Engineering",
-            "stars": 3
+            "professor": "Prof. Stephen Lee",
+            "review": "Review 1: While it is true that you can tell how much he cares about his students, and the class itself is an amazing help and made me a much better math student, the classroom environment was nearly always very toxic. Everyone, including the TAs, is scared of him. He frequently became explosive and has no problem belittling you in front of a class. Review 2: Dr. Lee has a bad reputation, but he made this class because he saw an opportunity to help students succeed at an academically rigorous school. He cares about his students SO much. This class is easy if you attend everything offered (class, workshop) and follow his instructions on how to succeed. Review 3: The lectures do not help much to what you are tested on the prelims. He cares about his students and wants the best for them but has an odd way of showing it. Best advice is to attend discussion, GO TO PEER-LED, and get a tutor. Do the pre-semester math quiz so you can get into On-Ramp before the first prelim. Extremely time consuming class. GL",
+            "subject": "Chemistry",
+            "stars": 3.6
         },
         {
-            "professor": "Dr. Barbara Scott",
-            "review": "One of the best professors I've ever had. Her lectures are both informative and inspiring.",
-            "subject": "Literature",
+            "professor": "Prof. Arnika Fuhrmann",
+            "review": "Review 1: Prof Fuhrmann is a wonderful lecturer and is very knowledgeable and passionate in her field. The way this course was structured was quite interesting as a bulk of it were guest speakers within the Asian Studies department and I enjoyed learning the course materials through those different perspectives. The workload was normal and pretty manageable. Review 2: Prof Fuhrmann is extremely nice, and very accommodating with extensions. Always willing to talk with students after class. Extremely easy grader. Class median was an A+. I think I had a perfect 100 average in the class because she and her TA Anna, who was also great, gave me full marks on every assignment even when I thought they weren't so great. Review 3: There is a lot of reading. Prof. Fuhrmann is very accomodating if you have problems, though.",
+            "subject": "Asian Studies",
+            "stars": 4.8
+        },
+        {
+            "professor": "Prof. Philip Krasicky",
+            "review": "Review 1: Amazing prof. Went in hating physics but he completely changed my mind. Flipped classroom structure was a good amount of work but ultimately beneficial, with lectures clearing up confusion and including relevant demonstrations. Exams are fair and plenty of outside resources (office hours, etc) provided. Krasicky wants you to succeed, loved him. Review 2: Professor Krasicky is funny, passionate, and overall a great guy who gives incredible lectures. The class is a bit time-consuming (with 3 lectures, 2 discussions, reading quizzes, and psets every week) but it is extremely well-organized and is rather beginner-friendly to first-semester freshmen. He is also great outside of class. Review 3: Taken FA23. This course was really laid out nicely. I also had a wonderful TA (shout out to Steve). Prof explained stuff very clearly in class, was quite enthusiastic with nice demonstrations and was accessible for questions after class. Most of my learning came from lecture, COOPs (Disc.), and the HW. You also get familiar with Curious Cat.",
+            "subject": "Physics",
+            "stars": 4.8
+        },
+        {
+            "professor": "Prof. Cynthia Kinsland",
+            "review": "Review 1: I was scared of her based on what I heard about her class. I am convinced those people did not work for this class. Orgo is hard regardless of who teaches, but Dr. Kinsland is an excellent lecturer who supports her students; Open to questions and gave great analogies to help with understanding. I found her exams fair based on what she provided us. Review 2: Ya gotta go to lecture, but I wish there was more textbook/online info to learn from bc she goes on tangents and rushes through material. If you do bad on prelim one you are screwed bc its the easiest of the four exams and worth just as much. Review 3: People with negative reviews haven't gotten to know her. Kinsland is one of the most considerate and approachable professors at Cornell and truly cares about student success. Her prelims are difficult but if you actually make an effort to understand her lectures you'll do well. She holds tons of office hours so take advantage of them!",
+            "subject": "Chemistry",
+            "stars": 2.7
+        },
+        {
+            "professor": "Prof. Kyle Lancaster",
+            "review": "Review 1: Prof. Lancaster is the best chemistry professor in the department and the best I've had at Cornell. Lecture is pretty much mandatory since the class moves fast and if you miss a class, it's impossible to catch up. Office hours & undergrad study sessions were also super helpful, and if you understand the homework thoroughly, you will get an A. Review 2: Although his lectures were great and explained the matter in a clear way, he can be dismissive of questions in office hours. There were however a lot of TAs that could also be used, so you just have to find one you like. The labs were slow and annoying. Review 3: He's very knowledgeable and funny at times. However, grading is tough and those PSETs are brutal. While lectures and office hours are technically not mandatory, they are almost pseudo-mandatory because he doesn't really post everything he teaches and PSETs are borderline impossible without them.",
+            "subject": "Chemistry",
+            "stars": 4.5
+        },
+        {
+            "professor": "Prof. Stephanie Divo",
+            "review": "Review 1: She has high standards but she is very honest and fair. The class is very intimidating at first but eventually you become accustomed to the workload, which is definitely very heavy. I went from a background of 0 chinese to being able to hold basic conversations and keep up with chinese friends. Review 2: Professor Divo may seem quite strict, but only because she really cares about your Chinese journey! You have to attend every class but you really learn so much in CHIN 1101 with her and the other teachers. Review 3: Nice and easily accessible but get ready to bust your butt off working for that grade; not everyone can meet 7 times a week and have weekly quizzes. Strict on pronunciation and grammar but I learned a lot from her.",
+            "subject": "Chinese",
+            "stars": 4.6
+        },
+        {
+            "professor": "Prof. Kristin Roebuck",
+            "review": "Review 1: Incredible, engaging, and charming lecturer. She likes to use visuals to draw you into the historical context. Readings are dense, and you memorize lots of facts to do well on the exams. No extra credit. Also, the historical narrative she offers is conspicuously feminist and Marxist (but not communist). Review 2: Professor Roebuck is an incredibly engaging lecturer. She is very clearly an expert on the subjects that she teaches, and responds to tangential student questions with evidenced, precise knowledge. She is very nice to students and very friendly during office hours. The course grade is one prelim, one final, and discussion participation. Review 3: If you go to the discussions, participate, and do the readings, you will be fine. Prof. Roebuck is amazing and is always helpful when you need help. The lectures are always engaging and she always stays after class to answer questions despite how late it is. Also gave a lot of grading accommodations that made the students' lives a lot easier.",
+            "subject": "Asian Studies",
+            "stars": 4.4
+        },
+        {
+            "professor": "Prof. Derek Chang",
+            "review": "Review 1: Quite possibly the most fun I've had in a class freshman year, if not ever. Stress is unheard of, as long as you pitch in maybe once a week. Review 2: A nice guy, engaging lectures. Very light workload, only a midterm and final paper on top of weekly discussion posts. We did not receive any grades or feedback for our work, only our final grade on Student Center. Review 3: Prof Chang is a super super nice guy, and you can tell that he really cares about his students. He's always willing to accommodate extensions and responds very quickly to emails. The only issue I had with the class is that we literally didn't get a single grade until our final grade, but I knew that coming in b/c of reviews on here lol.",
+            "subject": "Asian American Studies",
+            "stars": 4.5
+        },
+        {
+            "professor": "Prof. Ivanna Yi",
+            "review": "Review 1: Group projects are fun and engaging. The lecture itself is also interesting. Very respectful and open to students' opinions and thoughts. Assignments are not too heavy. If you at least read and pay attention, no problem at all. Highly recommended class!",
+            "subject": "Asian Studies",
             "stars": 5
+        },
+        {
+            "professor": "Prof. Bill Miller",
+            "review": "Review 1: Prof. Miller is a great professor and a genuinely caring person. Made lectures engaging and always open to questions and re-explaining concepts. Review 2: Just a genuinely nice guy, very knowledgable, answers all questions, very chill about deadlines and gives a lot of small graded work to spread the grade out. Midterm and final were very fair. Review 3: Professor Miller is a great instructor. He's very interactive with students and makes the lecture engaging and interesting. Very approachable and humorous.",
+            "subject": "Plant Science",
+            "stars": 4.9
+        },
+        {
+            "professor": "Prof. Jeff Rzeszotarski",
+            "review": "Review 1: Professor Rzeszotarski is the best professor I've had at Cornell so far. He is witty, and cares a lot about certain things, but is a great professor that cares for students. I would take any course with him again. Review 2: Great at explaining concepts and very caring prof overall. The homework accurately reflects what is learned but is still very interesting and rewarding. You do have to pay attention and keep up to do well. Review 3: well-organized and well-explained material. He uploads recordings so easy to review. Assignments echo w class material so easy to work on. nice class!",
+            "subject": "Information Science",
+            "stars": 5
+        },
+        {
+            "professor": "Prof. Hadas Ritz",
+            "review": "Review 1: Atrocious grading rubrics with no thought behind them. Consistently took off 20-40% from total homework grades for tiny errors like not writing dimensions on a Free Body Diagram or not writing Given: Find: Plan above the solution to a problem, even when all final answers were correct. Partial credit wasn't given on prelims, which weren't curved. Review 2: Says we get multiple attempts-not true. Gave no advice about approach to prelim 1, making prelim 2 a sprint through 9 questions. 2 problems drop a whole letter grade, we got 1 try for them, how this even makes sense when the whole point of this grading system is to have multiple chances. Class material is not bad but just ridiculous grading. Review 3: Ritz is a great lecturer, but the grading scheme she tried to implement this semester was poorly organized and incredibly ineffective. Some things on the syllabus were changed in the last week of class, and there is little/no partial credit.",
+            "subject": "Mathematics",
+            "stars": 2.7
+        },
+        {
+            "professor": "Prof. Bob Turgeon",
+            "review": "Review 1: Professor Turgeon is a nice professor; lectures are long and stale. Tests lean heavily into random points from the lecture but study from posted PowerPoint, and you're good. Review 2: Professor Turgeon is great and adorable. He was very understanding and if you study the power points and read the textbook you will be well prepared for exams. Review 3: Pulls specific details from text and powerpoint onto test. Lectures are hard to follow and he is not the best teacher. In order to succeed you have to study the book and look for specific random details in the power points and you should be good. It is not even worth taking notes in lecture because all the info is in book and power points.",
+            "subject": "Biology",
+            "stars": 3.3
+        },
+        {
+            "professor": "Prof. Gordon Stacey",
+            "review": "Review 1: he is nice but so disorganized, and doesn't know how to teach at an intro level. would avoid the class if you don't have a good bit of astronomy knowledge already. Review 2: Such a lovely guy but he really does not explain things at an intro level which is kind of important when teaching a level 1000 course. Don't recommend taking 1195 if you don't have a background in astronomy it's so much material at a really fast pace. Review 3: Absentminded, slow to hand out assignments and even slower to grade them (like really slow). Nice guy, helpful-ish, repeats a couple of jokes. Doesnt really tell you in advance what will be on exams. Hard class but he grades relatively generously.",
+            "subject": "Astronomy",
+            "stars": 3.9
+        },
+        {
+            "professor": "Prof. Anke van Zuylen",
+            "review": "Review 1: Class is so hard but it's one of the hardest CS classes notoriously so I don't know what else you'd expect there. As a person, she's wonderful. Amazing lecturer and explains well. She cares deeply about her students as well and is absolutely lovely. You may not get an amazing grade in this class but it is a fair class overall. Review 2: I took Algo with Professor Anke in FA23. Her lectures were easy to understand yet fascinating, delivered with humor, and provoked further exploration of topics through the textbook and other sources. The homework was hard, but really grinding it ensured success on exams. Her teaching has inspired me to continue studying algorithms more in-depth. Review 3: Lectures are generally done well and the material is presented in an engaging way, but the material does not always carry over to the assignments. It is very possible to attend all the lectures, understand the material, and still pull C's on exams because of harsh grading.",
+            "subject": "Computer Science",
+            "stars": 4.1
+        },
+        {
+            "professor": "Prof. Ronald Dinapoli",
+            "review": "Review 1: Ronald is a great teacher. Despite the fact the class is pass/fail, he gives students a lot of attention and wants them to both pass and understand the content. He also gives great life advice. Review 2: Excellent professor that gives fun and engaging lectures on C++. Very funny, tells great stories, and gives a level of attention to students that is uncommon in an S/U class. Never say never! Review 3: Fine professor, but I disagree with the way he taught C++ this year. He attempted to teach the 2003 version of the language first, which caused many issues with modern windows computers. His lectures aren't engaging, but the slides are accessible online and helpful for homework. Weekly assignments were unegaging and sometimes frustrating.",
+            "subject": "Computer Science",
+            "stars": 3.4
+        },
+        {
+            "professor": "Prof. Anne Bracy",
+            "review": "Review 1: Great, encouraging professor with clear, easy-to-follow lectures. Holds helpful office hours and review sessions. Projects in the class are a great balance of challenging and engaging. Learned a ton in the class and would recommend to anyone who is trying to get into CS! Review 2: Good lectures, very accessible and caring about students. Difficult class with a lot of workload but Bracy does a good job at navigating the course. Review 3: Professor Bracy's class was so incredibly difficult for the sole purpose of being difficult. Lectures move so incredibly fast, projects have virtually no guidance and are difficult, and exams are not super related to projects and are still hard. I did more work for this class than any of my others classes and was miserable for each second of it.",
+            "subject": "Computer Science",
+            "stars": 3.6
+        },
+        {
+            "professor": "Prof. Bharath Hariharan",
+            "review": "Review 1: This isn't the worst course I've ever taken, but it's definitely up there. The material is interesting, but the course is so disorganized that it makes it hard to care about the material. Almost all of our assignments were shoved into the last month of the course. Lectures are boring, slide decks are not organized, and staff support is non-existent. Review 2: boring lecture. I feel like I barely learned from this course, even though I did well. Review 3: Seriously disorganized class. Gives us about 2 assignments in the first 90% of the semester and then drops 4 towards the last 2 weeks of class. Review material has no answers, frequently canceled office hours, and no help on ed discussion. Terrible grading scale as well which was final despite half the class doing not as well as he expected.",
+            "subject": "Computer Science",
+            "stars": 2.5
+        },
+        {
+            "professor": "Prof. Anthony Myers",
+            "review": "Review 1: His lectures are okay and he is good at answering students' questions in an enlightening manner. Perhaps things would have been different in a smaller class format, but he was just middle of the road. Review 2: Prof. Myers is a great person for people who have had experience coding in java and with the concepts taught in the course. He is clearly not, however, meant to teach 2110. The only coding experience I had before the class was CS 1112, and this was a huge step up. Lecture pace was WAY too fast and course was pretty disorganized. Exams were fair-ish. Review 3: Myers is very knowledgeable and you can really tell that he cares about his students through the way he carries himself in lecture. It's crazy how much work is in the assignments (200 hours total for me), but the online course notes and TA office hours are a god send. I've never learned this much from a professor and a class before.",
+            "subject": "Computer Science",
+            "stars": 3.5
         }
     ]
 }
