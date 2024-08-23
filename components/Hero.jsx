@@ -17,7 +17,7 @@ const Hero = () => {
         Your AI-Powered Guide to Smarter Course Choices
       </p>
       <div className="flex gap-5 justify-center">
-        <Link href="/dashboard">
+        <Link href="/signup">
           <p className=" w-fit text-white text-[13px] py-2 px-6 rounded-md bg-[#262626] cursor-pointer hover:bg-[#404040] mt-7">
             Get Started ⚡️
           </p>
