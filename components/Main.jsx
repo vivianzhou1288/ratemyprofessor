@@ -1,14 +1,14 @@
 "use client";
-
 import Image from "next/image";
 import UserImg from "@/public/pfpsample.jpeg";
 import critiqueImg from "@/public/critiqueLogo.png";
 import { Apple, BookOpen, Lightbulb, Send, ThumbsUp } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
-const Main = () => {
+const Main = ({ user }) => {
   const contentRef = useRef(null);
   const [intro, setIntro] = useState(true);
+
   useEffect(() => {
     if (contentRef.current) {
       contentRef.current.scrollTop = contentRef.current.scrollHeight;
@@ -35,7 +35,7 @@ const Main = () => {
           {intro ? (
             <div className="mt-[120px]">
               <h1 className="dark-gradient-blue text-5xl sm:text-6xl">
-                Welcome, Name
+                Welcome, {user?.fullName || "Name"}
               </h1>
               <p className="text-3xl sm:text-4xl text-[#818183] mt-1">
                 How can we help you today?
@@ -74,9 +74,7 @@ const Main = () => {
           ) : (
             <>
               <div className="critiqueUser">
-                <p className="critiqueUserChat">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
+                <p className="critiqueUserChat"></p>
               </div>
               {}
               <div className="critiqueBot">
@@ -86,24 +84,9 @@ const Main = () => {
                   width={35}
                   alt=""
                 />
-                <p className="critiqueBotChat">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Obcaecati officiis iure minus, porro nam, maxime, maiores vel
-                  labore ipsa eveniet inventore dolores non doloremque natus
-                  dolore repellendus tenetur accusamus commodi. Lorem ipsum
-                  dolor sit amet consectetur adipisicing elit. Quidem
-                  consequatur doloremque et voluptatem accusantium expedita
-                  molestias nobis pariatur, aspernatur itaque nihil a aliquam
-                  modi deleniti quo enim voluptas repudiandae? Rem.
-                </p>
+                <p className="critiqueBotChat"></p>
               </div>
               {}
-              <div className="critiqueUser">
-                <p className="critiqueUserChat">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Obcaecati officiis iure nam.
-                </p>
-              </div>
             </>
           )}
         </div>

@@ -1,12 +1,32 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import Sidebar from "@/components/Sidebar";
 import Main from "@/components/Main";
 
 const Dashboard = () => {
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const fetchUser = () => {
+      // Retrieve user data from local storage or session storage
+      const userData = localStorage.getItem("user");
+
+      if (userData) {
+        setUser(JSON.parse(userData));
+      } else {
+        // Handle case where user data is not available
+        console.error("No user data found in local storage.");
+      }
+    };
+
+    fetchUser();
+  }, []);
+
   return (
-    <div className="text-white flex flex-row ">
+    <div className="text-white flex flex-row">
       <Sidebar />
-      <Main />
+      <Main user={user} />
     </div>
   );
 };
