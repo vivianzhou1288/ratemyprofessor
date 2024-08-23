@@ -9,7 +9,6 @@ const Dashboard = () => {
 
   useEffect(() => {
     const fetchUser = () => {
-      // Retrieve user data from local storage or session storage
       const userData = localStorage.getItem("user");
 
       if (userData) {

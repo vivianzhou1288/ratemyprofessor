@@ -8,12 +8,59 @@ import { useEffect, useRef, useState } from "react";
 const Main = ({ user }) => {
   const contentRef = useRef(null);
   const [intro, setIntro] = useState(true);
+  const [messages, setMessages] = useState([]);
+  const [input, setInput] = useState("");
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     if (contentRef.current) {
       contentRef.current.scrollTop = contentRef.current.scrollHeight;
     }
-  }, []);
+  }, [messages]);
+
+  const handleSubmit = async () => {
+    if (!input.trim()) return;
+    setIntro(false);
+    setLoading(true);
+    setMessages((prev) => [...prev, { role: "user", content: input }]);
+
+    try {
+      const response = await fetch("/api/chat/route", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify([{ role: "user", content: input }]),
+      });
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        console.error("Error during fetch:", response.status, errorText);
+        throw new Error("Network response was not ok");
+      }
+
+      const data = await response.json();
+      setMessages((prev) => [...prev, { role: "bot", content: data.result }]);
+    } catch (error) {
+      console.error("Error during fetch:", error.message);
+      setMessages((prev) => [
+        ...prev,
+        { role: "bot", content: "Error: Something went wrong." },
+      ]);
+    } finally {
+      setInput("");
+      setLoading(false);
+    }
+  };
+
+  const handleKeyDown = (event) => {
+    if (event.key === "Enter") {
+      handleSubmit();
+    }
+  };
+
+  const handleCardClick = (prompt) => {
+    setInput(prompt);
+    handleSubmit();
+  };
 
   return (
     <div className="text-black flex flex-col w-full h-screen">
@@ -35,20 +82,34 @@ const Main = ({ user }) => {
           {intro ? (
             <div className="mt-[120px]">
               <h1 className="dark-gradient-blue text-5xl sm:text-6xl">
-                Welcome, {user?.fullName || "Name"}
+                Welcome, {user?.fullName || ""}
               </h1>
               <p className="text-3xl sm:text-4xl text-[#818183] mt-1">
                 How can we help you today?
               </p>
               <div className="flex gap-3 justify-center flex-wrap mt-20">
                 <div className="row gap-3">
-                  <div className="card">
+                  <div
+                    className="card"
+                    onClick={() =>
+                      handleCardClick(
+                        "Which teacher makes math concepts click easily?"
+                      )
+                    }
+                  >
                     <Lightbulb color="#c2af35" />
                     <p className="mt-3">
                       Which teacher makes math concepts click easily?
                     </p>
                   </div>
-                  <div className="card">
+                  <div
+                    className="card"
+                    onClick={() =>
+                      handleCardClick(
+                        "Which teacher has the best lecture notes or materials?"
+                      )
+                    }
+                  >
                     <BookOpen color="#3582c2" />
                     <p className="mt-3">
                       Which teacher has the best lecture notes or materials?
@@ -56,13 +117,27 @@ const Main = ({ user }) => {
                   </div>
                 </div>
                 <div className="hidden sm:flex sm:row gap-3">
-                  <div className="card">
+                  <div
+                    className="card"
+                    onClick={() =>
+                      handleCardClick(
+                        "Which teacher provides the most detailed feedback?"
+                      )
+                    }
+                  >
                     <Apple color="#db3c3c" />
                     <p className="mt-3">
                       Which teacher provides the most detailed feedback?
                     </p>
                   </div>
-                  <div className="card">
+                  <div
+                    className="card"
+                    onClick={() =>
+                      handleCardClick(
+                        "Which teacher is the most lenient with deadlines?"
+                      )
+                    }
+                  >
                     <ThumbsUp color="#5bc235" />
                     <p className="mt-3">
                       Which teacher is the most lenient with deadlines?
@@ -73,20 +148,33 @@ const Main = ({ user }) => {
             </div>
           ) : (
             <>
-              <div className="critiqueUser">
-                <p className="critiqueUserChat"></p>
-              </div>
-              {}
-              <div className="critiqueBot">
-                <Image
-                  className="rounded-md"
-                  src={critiqueImg}
-                  width={35}
-                  alt=""
-                />
-                <p className="critiqueBotChat"></p>
-              </div>
-              {}
+              {messages.map((message, index) => (
+                <div
+                  key={index}
+                  className={
+                    message.role === "user" ? "critiqueUser" : "critiqueBot"
+                  }
+                >
+                  {message.role === "bot" && (
+                    <Image
+                      className="rounded-md"
+                      src={critiqueImg}
+                      width={35}
+                      height={35}
+                      alt="Bot Icon"
+                    />
+                  )}
+                  <p
+                    className={
+                      message.role === "user"
+                        ? "critiqueUserChat"
+                        : "critiqueBotChat"
+                    }
+                  >
+                    {message.content}
+                  </p>
+                </div>
+              ))}
             </>
           )}
         </div>
@@ -98,9 +186,15 @@ const Main = ({ user }) => {
           <input
             type="text"
             placeholder="Write a prompt here..."
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            onKeyDown={handleKeyDown}
             className="bg-[#24252a] w-full text-sm p-4 pl-12 pr-16 text-white outline-none border border-[2px] border-[#1c1d22] rounded-full"
           />
-          <div className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-[#0c6896] to-[#59a7ce] p-2 rounded-full cursor-pointer mr-3">
+          <div
+            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-[#0c6896] to-[#59a7ce] p-2 rounded-full cursor-pointer mr-3"
+            onClick={handleSubmit}
+          >
             <Send color="white" size={17} />
           </div>
         </div>
