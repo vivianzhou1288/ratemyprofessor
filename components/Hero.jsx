@@ -22,9 +22,11 @@ const Hero = () => {
             Get Started For Free
           </p>
         </Link>
-        <p className=" w-fit text-white text-[13px] py-3 px-6 rounded-md bg-[#1c1d22] cursor-pointer hover:bg-[#24252a] mt-7 ">
-          Learn More
-        </p>
+        <a href="#about">
+          <p className=" w-fit text-white text-[13px] py-3 px-6 rounded-md bg-[#1c1d22] cursor-pointer hover:bg-[#24252a] mt-7 ">
+            Learn More
+          </p>
+        </a>
       </div>
       <Image
         src={placeholderDemo}

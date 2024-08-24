@@ -78,3 +78,7 @@
   border-radius: 5px;
   max-width: 100%;
 }
+
+.flip-horizontal {
+  transform: scaleX(-1);
+}
