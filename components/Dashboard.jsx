@@ -14,7 +14,6 @@ const Dashboard = () => {
       if (userData) {
         setUser(JSON.parse(userData));
       } else {
-        // Handle case where user data is not available
         console.error("No user data found in local storage.");
       }
     };
