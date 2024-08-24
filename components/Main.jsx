@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import UserImg from "@/public/pfpsample.jpeg";
 import critiqueImg from "@/public/critiqueLogo.png";
@@ -54,7 +53,12 @@ const Main = ({ user }) => {
     if (!input.trim()) return;
     setIntro(false);
     setLoading(true);
-    setMessages((prev) => [...prev, { role: "user", content: input }]);
+
+    setMessages((prev) => [
+      ...prev,
+      { role: "user", content: input },
+      { role: "bot", content: "Loading..." },
+    ]);
 
     try {
       const response = await fetch("/api/chat", {
@@ -71,11 +75,15 @@ const Main = ({ user }) => {
 
       const data = await response.json();
       const cleanedResult = cleanText(data.result);
-      setMessages((prev) => [...prev, { role: "bot", content: cleanedResult }]);
+
+      setMessages((prev) => [
+        ...prev.slice(0, -1),
+        { role: "bot", content: cleanedResult },
+      ]);
     } catch (error) {
       console.error("Error during fetch:", error.message);
       setMessages((prev) => [
-        ...prev,
+        ...prev.slice(0, -1),
         { role: "bot", content: "Error: Something went wrong." },
       ]);
     } finally {
@@ -208,7 +216,11 @@ const Main = ({ user }) => {
                       : "critiqueBotChat"
                   }
                 >
-                  {formatText(message.content)}
+                  {message.content === "Loading..." ? (
+                    <p className="text-gray-400">{message.content}</p>
+                  ) : (
+                    formatText(message.content)
+                  )}
                 </div>
               </div>
             ))}
