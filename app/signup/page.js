@@ -4,6 +4,8 @@ import { ArrowRight } from "lucide-react";
 import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
+import Logo from "@/public/logo.png";
 
 const Page = () => {
   const [fullName, setFullName] = useState("");
@@ -41,9 +43,18 @@ const Page = () => {
   return (
     <div className="bg-[#09090b] min-h-screen w-full">
       <main className="min-h-screen w-full max-w-[1200px] m-auto px-6 py-4">
-        <Link href="/">
-          <p className="text-white font-medium text-lg">Critique</p>
-        </Link>
+        <div className="">
+          {/* <Bot color="white" /> */}
+          <Link className="flex gap-3 items-center" href="/">
+            <Image
+              src={Logo}
+              alt=""
+              width={30}
+              className="bg-[#90C5DF] rounded-md"
+            />
+            <p className="text-white font-medium text-lg">Critique</p>
+          </Link>
+        </div>
         <div className="min-h-screen flex justify-center items-center">
           <div>
             <p className="mt-10 text-[#b2b0b0] text-center text-[13px]">

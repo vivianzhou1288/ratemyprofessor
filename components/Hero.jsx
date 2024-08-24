@@ -18,11 +18,11 @@ const Hero = () => {
       </p>
       <div className="flex gap-5 justify-center">
         <Link href="/signup">
-          <p className=" w-fit text-white text-[13px] py-2 px-6 rounded-md bg-[#262626] cursor-pointer hover:bg-[#404040] mt-7">
-            Get Started ⚡️
+          <p className=" w-fit text-white text-[13px] py-3 px-6 rounded-md bg-[#1c1d22] cursor-pointer hover:bg-[#24252a] mt-7 ">
+            Get Started For Free
           </p>
         </Link>
-        <p className=" w-fit text-white text-[13px] py-2 px-6 rounded-md bg-[#262626] cursor-pointer hover:bg-[#404040] mt-7">
+        <p className=" w-fit text-white text-[13px] py-3 px-6 rounded-md bg-[#1c1d22] cursor-pointer hover:bg-[#24252a] mt-7 ">
           Learn More
         </p>
       </div>

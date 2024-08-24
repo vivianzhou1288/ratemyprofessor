@@ -1,15 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import placeholderDemo from "@/public/placeholder.jpg";
+import { Bot } from "lucide-react";
 
-const FeatureCard = () => {
+const FeatureCard = (props) => {
   return (
-    <div className="border-solid border-[1px] border-white w-full text-center p-4 rounded-md">
-      <h1 className="text-xl text-white dark-gradient-blue">Feature Name</h1>
-      <p className="text-white text-left text-sm mt-5 mb-2">
-        Lorem ipsum dolor sit amet consec adipisicing elit. Dolorum, aut. Lorem
-        ipsum dolor sit amet.
-      </p>
+    <div className="bg-[#1c1d22] w-full p-4 rounded-lg">
+      <Bot size={100} className="m-auto" color="#59a7ce" />
+      <h1 className="my-2 text-md text-[#cfcfcf]">{props.name}</h1>
+      <p className="text-[#818183] text-left text-sm mt-1 mb-2">{props.desc}</p>
     </div>
   );
 };
