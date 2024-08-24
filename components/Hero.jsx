@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import placeholderDemo from "@/public/placeholder.jpg";
+import placeholderDemo from "@/public/demo.png";
 import Link from "next/link";
 
 const Hero = () => {

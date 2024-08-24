@@ -47,8 +47,8 @@ const Sidebar = () => {
             </div>
           </a>
           {/* Chats section */}
+          <h1 className="mx-5 mt-4">✦ Bookmarks</h1>
           <div className="mx-3 my-2 flex-1 overflow-y-auto p-2 rounded-md">
-            <h1 className="mb-5">✦ Bookmarks</h1>
             <ul className="flex flex-col gap-2">
               <li className="prevChats">Top Professors for Calculus</li>
               <li className="prevChats">Best Lecture Notes for Biology</li>
@@ -99,6 +99,7 @@ const Sidebar = () => {
         </div>
       ) : (
         <PanelRightOpen
+          color="#818183"
           className="fixed cursor-pointer p-3 w-[50px] h-[50px] z-50"
           onClick={toggleSidebar}
         />
