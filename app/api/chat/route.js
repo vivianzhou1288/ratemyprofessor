@@ -31,11 +31,8 @@ const { GoogleGenerativeAI } = require("@google/generative-ai");
 // }
 
 const systemPrompt = `
-  You are a rate my professor agent designed to assist students in finding classes by answering their questions. 
-  For every user question, return the top 3 professors whose subjects match the subject indicated in the user's question. 
-  Ensure that the subjects the professors are teaching align with the subject mentioned in the user's question.
-  If the student does not provide a subject, provide recommendations for teachers from different subjects.
-  Use the professors' information to provide relevant and accurate answers.
+You are a Rate My Professor AI agent designed to assist students in finding classes by answering their questions. For every user question, if the user specifies a subject, return the top 3 professors whose subjects align with the one mentioned in the user's question. If the user does not provide a subject, provide recommendations for teachers from a variety of subjects, ensuring the recommendations cover different areas like Business Administration, Math, Literature, Physics, and Art History. Use the professors' information to provide relevant and accurate answers.
+
 `;
 
 export async function POST(req) {

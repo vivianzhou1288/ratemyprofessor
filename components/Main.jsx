@@ -28,8 +28,8 @@ const Main = ({ user }) => {
 
   const cleanText = (text) => {
     return text
+      .replace(/^\*\s*/gm, "")
       .replace(/\*\*/g, "")
-      .replace(/\n\s*\n/g, "\n\n")
       .trim();
   };
 
@@ -107,14 +107,14 @@ const Main = ({ user }) => {
           className="h-[35px] w-[35px] rounded-full"
         />
       </div>
-
       {/* Content Area */}
       <div
         ref={contentRef}
         className="flex-1 w-full max-w-[1000px] m-auto mt-[50px] mb-[60px] flex flex-col overflow-auto scrollbar-hidden"
       >
-        <div className="flex-1 flex flex-col justify-center items-center p-4 text-white">
-          {intro ? (
+        {/* Intro Content */}
+        {intro ? (
+          <div className="flex-1 flex flex-col justify-center items-center p-4 text-white">
             <div className="">
               <h1 className="dark-gradient-blue text-5xl sm:text-6xl">
                 Welcome, {user?.fullName || ""}
@@ -181,38 +181,39 @@ const Main = ({ user }) => {
                 </div>
               </div>
             </div>
-          ) : (
-            <>
-              {messages.map((message, index) => (
+          </div>
+        ) : (
+          // Messages Container
+          <div className="flex-1 p-4 pb-10 text-white flex flex-col">
+            {messages.map((message, index) => (
+              <div
+                key={index}
+                className={
+                  message.role === "user" ? "critiqueUser" : "critiqueBot"
+                }
+              >
+                {message.role === "bot" && (
+                  <Image
+                    className="rounded-md"
+                    src={critiqueImg}
+                    width={35}
+                    height={35}
+                    alt="Bot Icon"
+                  />
+                )}
                 <div
-                  key={index}
                   className={
-                    message.role === "user" ? "critiqueUser" : "critiqueBot"
+                    message.role === "user"
+                      ? "critiqueUserChat"
+                      : "critiqueBotChat"
                   }
                 >
-                  {message.role === "bot" && (
-                    <Image
-                      className="rounded-md"
-                      src={critiqueImg}
-                      width={35}
-                      height={35}
-                      alt="Bot Icon"
-                    />
-                  )}
-                  <div
-                    className={
-                      message.role === "user"
-                        ? "critiqueUserChat"
-                        : "critiqueBotChat"
-                    }
-                  >
-                    {formatText(message.content)}
-                  </div>
+                  {formatText(message.content)}
                 </div>
-              ))}
-            </>
-          )}
-        </div>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* Search Bar */}
