@@ -12,7 +12,7 @@ export default function Home() {
       <main className=" min-h-screen w-full max-w-[1200px] m-auto  px-6 py-4">
         <Header />
         <Hero />
-        <Features />
+        {/* <Features /> */}
         <Footer />
       </main>
     </div>
