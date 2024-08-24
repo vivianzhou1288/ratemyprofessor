@@ -50,26 +50,50 @@ const Sidebar = () => {
           <div className="mx-3 my-2 flex-1 overflow-y-auto p-2 rounded-md">
             <h1 className="mb-5">✦ Bookmarks</h1>
             <ul className="flex flex-col gap-2">
-              <li className="prevChats">Project Deadline Discussion</li>
-              <li className="prevChats">Weekend Plans</li>
-              <li className="prevChats">Document Review</li>
-              <li className="prevChats">Team Meeting Reminder</li>
-              <li className="prevChats">Follow-Up on Files</li>
-              <li className="prevChats">Project Deadline Discussion</li>
-              <li className="prevChats">Weekend Plans</li>
-              <li className="prevChats">Document Review</li>
-              <li className="prevChats">Team Meeting Reminder</li>
-              <li className="prevChats">Follow-Up on Files</li>
-              <li className="prevChats">Project Deadline Discussion</li>
-              <li className="prevChats">Weekend Plans</li>
-              <li className="prevChats">Document Review</li>
-              <li className="prevChats">Team Meeting Reminder</li>
-              <li className="prevChats">Follow-Up on Files</li>
-              <li className="prevChats">Project Deadline Discussion</li>
-              <li className="prevChats">Weekend Plans</li>
-              <li className="prevChats">Document Review</li>
-              <li className="prevChats">Team Meeting Reminder</li>
-              <li className="prevChats">Follow-Up on Files</li>
+              <li className="prevChats">Top Professors for Calculus</li>
+              <li className="prevChats">Best Lecture Notes for Biology</li>
+              <li className="prevChats">
+                Detailed Feedback from Chemistry Instructors
+              </li>
+              <li className="prevChats">
+                Lenient Deadlines for English Courses
+              </li>
+              <li className="prevChats">
+                Recommended Professors for Statistics
+              </li>
+              <li className="prevChats">Top Professors for Calculus</li>
+              <li className="prevChats">Best Lecture Notes for Biology</li>
+              <li className="prevChats">
+                Detailed Feedback from Chemistry Instructors
+              </li>
+              <li className="prevChats">
+                Lenient Deadlines for English Courses
+              </li>
+              <li className="prevChats">
+                Recommended Professors for Statistics
+              </li>
+              <li className="prevChats">Top Professors for Calculus</li>
+              <li className="prevChats">Best Lecture Notes for Biology</li>
+              <li className="prevChats">
+                Detailed Feedback from Chemistry Instructors
+              </li>
+              <li className="prevChats">
+                Lenient Deadlines for English Courses
+              </li>
+              <li className="prevChats">
+                Recommended Professors for Statistics
+              </li>
+              <li className="prevChats">Top Professors for Calculus</li>
+              <li className="prevChats">Best Lecture Notes for Biology</li>
+              <li className="prevChats">
+                Detailed Feedback from Chemistry Instructors
+              </li>
+              <li className="prevChats">
+                Lenient Deadlines for English Courses
+              </li>
+              <li className="prevChats">
+                Recommended Professors for Statistics
+              </li>
             </ul>
           </div>
         </div>

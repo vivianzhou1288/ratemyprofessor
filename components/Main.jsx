@@ -18,6 +18,33 @@ const Main = ({ user }) => {
     }
   }, [messages]);
 
+  const cleanText = (text) => {
+    // Remove unwanted characters or formatting
+    // Replace ** with empty string
+    // Replace newlines and extra spaces
+    return text
+      .replace(/\*\*/g, "") // Remove asterisks
+      .replace(/\n\s*\n/g, "\n\n") // Convert multiple newlines to double newlines
+      .trim();
+  };
+
+  const formatText = (text) => {
+    const paragraphs = text
+      .split("\n\n")
+      .filter((paragraph) => paragraph.trim() !== "");
+
+    return paragraphs.map((paragraph, index) => (
+      <p key={index} className="mb-4">
+        {paragraph.split("\n").map((line, lineIndex) => (
+          <span key={lineIndex}>
+            {line}
+            <br />
+          </span>
+        ))}
+      </p>
+    ));
+  };
+
   const handleSubmit = async () => {
     if (!input.trim()) return;
     setIntro(false);
@@ -25,7 +52,7 @@ const Main = ({ user }) => {
     setMessages((prev) => [...prev, { role: "user", content: input }]);
 
     try {
-      const response = await fetch("/api/chat/route", {
+      const response = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify([{ role: "user", content: input }]),
@@ -38,7 +65,8 @@ const Main = ({ user }) => {
       }
 
       const data = await response.json();
-      setMessages((prev) => [...prev, { role: "bot", content: data.result }]);
+      const cleanedResult = cleanText(data.result); // Clean the result here
+      setMessages((prev) => [...prev, { role: "bot", content: cleanedResult }]);
     } catch (error) {
       console.error("Error during fetch:", error.message);
       setMessages((prev) => [
@@ -164,15 +192,15 @@ const Main = ({ user }) => {
                       alt="Bot Icon"
                     />
                   )}
-                  <p
+                  <div
                     className={
                       message.role === "user"
                         ? "critiqueUserChat"
                         : "critiqueBotChat"
                     }
                   >
-                    {message.content}
-                  </p>
+                    {formatText(message.content)}
+                  </div>
                 </div>
               ))}
             </>

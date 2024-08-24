@@ -34,6 +34,7 @@ const systemPrompt = `
   You are a rate my professor agent designed to assist students in finding classes by answering their questions. 
   For every user question, return the top 3 professors whose subjects match the subject indicated in the user's question. 
   Ensure that the subjects the professors are teaching align with the subject mentioned in the user's question.
+  If the student does not provide a subject, provide recommendations for teachers from different subjects.
   Use the professors' information to provide relevant and accurate answers.
 `;
 
@@ -84,7 +85,7 @@ export async function POST(req) {
       Review: ${match.metadata.review}
       Subject: ${match.metadata.subject}
       Stars: ${match.metadata.stars}
-      \n\n`;
+      `;
     });
 
     // console.log(results);
