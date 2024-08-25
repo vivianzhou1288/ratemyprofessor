@@ -27,11 +27,21 @@ const Header = () => {
           <p className="p-1 cursor-pointer hover:text-[#59a7ce]">About</p>
         </a>
       </div>
-      <Link href="/dashboard">
-        <p className="text-white text-[12px] sm:text-[13px] py-2 px-6 rounded-md bg-[#1c1d22] cursor-pointer hover:bg-[#24252a]">
+        {/* <p className="text-white text-[12px] sm:text-[13px] py-2 px-6 rounded-md bg-[#1c1d22] cursor-pointer hover:bg-[#24252a]">
           Get Started ⚡️
-        </p>
-      </Link>
+        </p> */}
+        <div className = "flex ">
+          <Link href="/signup">
+            <p className="text-white text-[12px] sm:text-[13px] py-2 px-6 rounded-md bg-[#1c1d22] cursor-pointer hover:bg-[#24252a] mr-3">
+              Sign Up
+            </p>
+          </Link>
+          <Link href="/signin">
+            <p className="text-white text-[12px] sm:text-[13px] py-2 px-6 rounded-md bg-[#1c1d22] cursor-pointer hover:bg-[#24252a]">
+            Login
+            </p>
+          </Link>
+        </div>
     </div>
   );
 };

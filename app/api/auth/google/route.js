@@ -14,9 +14,9 @@ export async function POST() {
     // Check if the user already exists in Firestore
     const userDoc = await getDoc(userRef);
 
-    //If user does not exist, create a new document
+    // If user does not exist, create a new document
     if (!userDoc.exists()) {
-      await setDoc(doc(db, "users", user.uid), {
+      await setDoc(userRef, {
         uid: user.uid,
         email: user.email,
         profilePicture: user.photoURL,
@@ -31,6 +31,7 @@ export async function POST() {
 
     return NextResponse.json({ userData }, { status: 200 });
   } catch (error) {
+    console.error("Error during sign-in:", error); // Log the error to the server console
     return NextResponse.json({ error: error.message }, { status: 400 });
   }
 }

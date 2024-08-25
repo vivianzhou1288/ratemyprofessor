@@ -1,5 +1,8 @@
 import { auth, db } from "../../../../firebase.js";
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import {
+  createUserWithEmailAndPassword,
+  sendEmailVerification,
+} from "firebase/auth";
 import { doc, setDoc, getDoc } from "firebase/firestore";
 import { NextResponse } from "next/server";
 
@@ -12,6 +15,7 @@ export async function POST(req) {
       password
     );
     const user = userCredential.user;
+    await sendEmailVerification(user);
 
     const userRef = doc(db, "users", user.uid);
     await setDoc(userRef, {

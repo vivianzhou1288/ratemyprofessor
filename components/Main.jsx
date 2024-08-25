@@ -10,7 +10,9 @@ import {
   Send,
   ThumbsUp,
 } from "lucide-react";
+import {auth, signOut} from "../firebase.js"
 import { useEffect, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
 
 const Main = ({ user }) => {
   const contentRef = useRef(null);
@@ -18,6 +20,12 @@ const Main = ({ user }) => {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
+  const [isPopupVisible, setPopupVisible] = useState(false);
+  const router = useRouter();
+
+  const handleImageClick = () => {
+    setPopupVisible(!isPopupVisible);
+  };
 
   useEffect(() => {
     if (contentRef.current) {
@@ -59,7 +67,7 @@ const Main = ({ user }) => {
       { role: "user", content: input },
       { role: "bot", content: "Loading..." },
     ]);
-
+    setInput("");
     try {
       const response = await fetch("/api/chat", {
         method: "POST",
@@ -87,7 +95,6 @@ const Main = ({ user }) => {
         { role: "bot", content: "Error: Something went wrong." },
       ]);
     } finally {
-      setInput("");
       setLoading(false);
     }
   };
@@ -103,17 +110,37 @@ const Main = ({ user }) => {
     handleSubmit();
   };
 
+  const handleLogout = async () => {
+    await signOut(auth);
+    router.push("/")
+  }
+
   return (
     <div className="text-black flex flex-col w-full h-screen">
       {/* Header */}
       <div className="fixed top-0 left-0 w-full h-[50px] flex items-center justify-end p-2 z-10 gap-3 cursor-pointer">
         <FilePlus2 color="#818183" />
         <Bookmark color="#818183" />
-        <Image
-          src={UserImg}
-          alt="User"
-          className="h-[35px] w-[35px] rounded-full"
-        />
+        <div className="relative">
+          <Image
+            src={user?.photoURL ? user.photoURL : UserImg}
+            alt="User"
+            width={35}  // Specify the width
+            height={35}
+            className="rounded-full"
+            onClick={handleImageClick}
+          />
+          {isPopupVisible && (
+            <div className="absolute top-[100%] right-0 mt-2 p-2 bg-white shadow-lg border rounded">
+              <button
+                onClick={handleLogout}
+                className="text-red-500 hover:text-red-700"
+              >
+                Logout
+              </button>
+            </div>
+          )}
+        </div>
       </div>
       {/* Content Area */}
       <div

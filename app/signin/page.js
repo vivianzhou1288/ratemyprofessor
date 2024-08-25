@@ -5,6 +5,9 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { auth, db } from "../../firebase.js";
+import { doc, setDoc, getDoc } from "firebase/firestore";
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import Image from "next/image";
 import Logo from "@/public/logo.png";
 
@@ -42,6 +45,50 @@ const SignInPage = () => {
       setError("An unexpected error occurred."); // Set a generic error message
     }
   }
+
+  const handleGoogleSignIn = async () => {
+    const provider = new GoogleAuthProvider();
+
+    try {
+      const result = await signInWithPopup(auth, provider);
+      const user = result.user;
+
+      console.log("Signed in user:", user);
+
+      let userData;
+
+      if (user) {
+        const userDocRef = doc(db, "users", user.uid);
+        const userDocSnap = await getDoc(userDocRef);
+
+        // If the user document doesn't exist, create it
+        if (!userDocSnap.exists()) {
+          await setDoc(userDocRef, {
+            uid: user.uid,
+            email: user.email,
+            fullName: user.displayName,
+            photoURL: user.photoURL,
+          });
+
+          // Fetch the newly created user document
+          const newUserDocSnap = await getDoc(userDocRef);
+          userData = newUserDocSnap.data();
+        } else {
+          // If the document exists, retrieve the data
+          userData = userDocSnap.data();
+        }
+
+        localStorage.setItem("user", JSON.stringify(userData));
+
+        console.log("Retrieved user data:", userData);
+      }
+
+      // Redirect to the dashboard
+      router.push("/dashboard");
+    } catch (error) {
+      console.error("Sign-up error:", error.message);
+    }
+  };
 
   return (
     <div className="bg-[#09090b] min-h-screen w-full">
@@ -88,7 +135,10 @@ const SignInPage = () => {
               >
                 Sign In <ArrowRight size={15} />
               </button>
-              <button className="flex items-center justify-center gap-2 w-full outline-none bg-[#14141b] text-[#b2b0b0] hover:bg-[#21212a] py-3 px-4 text-sm rounded-md">
+              <button
+                onClick={handleGoogleSignIn}
+                className="flex items-center justify-center gap-2 w-full outline-none bg-[#14141b] text-[#b2b0b0] hover:bg-[#21212a] py-3 px-4 text-sm rounded-md"
+              >
                 Sign In With Google
               </button>
               <h1 className="text-[#b2b0b0] text-center text-[12px] p-1 flex gap-1 justify-center mb-40">
