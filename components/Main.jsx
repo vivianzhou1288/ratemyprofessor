@@ -163,26 +163,26 @@ const Main = ({ user }) => {
                     className="card"
                     onClick={() =>
                       handleCardClick(
-                        "Which teacher makes math concepts click easily?"
+                        "Which professor makes math concepts click easily?"
                       )
                     }
                   >
                     <Lightbulb color="#c2af35" />
                     <p className="mt-3">
-                      Which teacher makes math concepts click easily?
+                      Which professor makes math concepts click easily?
                     </p>
                   </div>
                   <div
                     className="card"
                     onClick={() =>
                       handleCardClick(
-                        "Which teacher has the best lecture notes or materials?"
+                        "Which professor has the best lecture notes or materials?"
                       )
                     }
                   >
                     <BookOpen color="#3582c2" />
                     <p className="mt-3">
-                      Which teacher has the best lecture notes or materials?
+                      Which professor has the best lecture notes or materials?
                     </p>
                   </div>
                 </div>
@@ -191,26 +191,26 @@ const Main = ({ user }) => {
                     className="card"
                     onClick={() =>
                       handleCardClick(
-                        "Which teacher provides the most detailed feedback?"
+                        "Which professor provides the most detailed feedback?"
                       )
                     }
                   >
                     <Apple color="#db3c3c" />
                     <p className="mt-3">
-                      Which teacher provides the most detailed feedback?
+                      Which professor provides the most detailed feedback?
                     </p>
                   </div>
                   <div
                     className="card"
                     onClick={() =>
                       handleCardClick(
-                        "Which teacher is the most lenient with deadlines?"
+                        "Which professor is the most lenient with deadlines?"
                       )
                     }
                   >
                     <ThumbsUp color="#5bc235" />
                     <p className="mt-3">
-                      Which teacher is the most lenient with deadlines?
+                      Which professor is the most lenient with deadlines?
                     </p>
                   </div>
                 </div>
