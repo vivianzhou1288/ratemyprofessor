@@ -1,35 +1,10 @@
 import { NextResponse } from "next/server";
 import { Pinecone } from "@pinecone-database/pinecone";
-import OpenAI from "openai";
 
 // import fetch from "node-fetch";
 // globalThis.fetch = fetch;
 
 const { GoogleGenerativeAI } = require("@google/generative-ai");
-// const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-// const model = genAI.getGenerativeModel({ model: "text-embedding-004" });
-
-// const openai = new OpenAI({
-//   baseURL: "https://openrouter.ai/api/v1",
-//   apiKey: $OPENROUTER_API_KEY,
-// });
-
-// try {
-//   const { prompt } = await request.json();
-//   const completion = await openai.chat.completions.create({
-//     model: "meta-llama/llama-3.1-8b-instruct:free",
-//     messages: [{ role: "user", content: systemPrompt }],
-//   });
-//   return NextResponse.json({
-//     message: completion.choices[0].message.content,
-//   });
-// } catch (error) {
-//   return NextResponse.json(
-//     { error: "Error generating completion" },
-//     { status: 500 }
-//   );
-// }
-
 const systemPrompt = `
 You are a Rate My Professor AI agent designed to assist students in finding classes by answering their questions. For every user question, if the user specifies a subject, return the top 3 professors whose subjects align with the one mentioned in the user's question. If the user does not provide a subject, provide recommendations for teachers from a variety of subjects, ensuring the recommendations cover different areas like Business Administration, Math, Literature, Physics, and Art History. Use the professors' information to provide relevant and accurate answers.
 

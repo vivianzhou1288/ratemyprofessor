@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import UserImg from "@/public/pfpsample.jpeg";
 import critiqueImg from "@/public/critiqueLogo.png";
@@ -14,7 +15,7 @@ import {auth, signOut} from "../firebase.js"
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 
-const Main = ({ user }) => {
+const Main = ({ user, selectedConversation }) => {
   const contentRef = useRef(null);
   const [intro, setIntro] = useState(true);
   const [messages, setMessages] = useState([]);
@@ -22,6 +23,8 @@ const Main = ({ user }) => {
   const [loading, setLoading] = useState(false);
   const [isPopupVisible, setPopupVisible] = useState(false);
   const router = useRouter();
+  const [conversationId, setConversationId] = useState(null)
+  const [isBookmarked, setIsBookmarked] = useState(false);
 
   const handleImageClick = () => {
     setPopupVisible(!isPopupVisible);
@@ -32,6 +35,18 @@ const Main = ({ user }) => {
       contentRef.current.scrollTop = contentRef.current.scrollHeight;
     }
   }, [messages]);
+
+  useEffect(() => {
+    if (selectedConversation) {
+      setMessages(selectedConversation.conversation);  
+      setConversationId(selectedConversation.id)
+      setIsBookmarked(true)
+      console.log(selectedConversation)
+    } else {
+      setMessages([]);  
+      setConversationId(null)
+    }
+  }, [selectedConversation]);
 
   const cleanText = (text) => {
     return text
@@ -57,14 +72,45 @@ const Main = ({ user }) => {
     ));
   };
 
+  const updateBookmarkedConversation = async (userMessage, botMessage) => {
+    try {
+      console.log(userMessage)
+      const updatedConversation = [
+        { role: "user", content: userMessage.content },
+        { role: "bot", content: botMessage },
+      ];
+  
+      const response = await fetch("/api/conversations/update", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          conversationId,
+          userId: user.uid,
+          updatedConversation,
+        }),
+      });
+  
+      const result = await response.json();
+      if (!response.ok) {
+        console.error(result.error);
+      } else {
+        console.log(result.message);
+      }
+    } catch (error) {
+      console.error("Error updating conversation:", error);
+    }
+  };
+
   const handleSubmit = async () => {
     if (!input.trim()) return;
     setIntro(false);
     setLoading(true);
 
+    const newMessage = { role: "user", content: input };
+    console.log(newMessage)
     setMessages((prev) => [
       ...prev,
-      { role: "user", content: input },
+      newMessage,
       { role: "bot", content: "Loading..." },
     ]);
     setInput("");
@@ -72,7 +118,7 @@ const Main = ({ user }) => {
       const response = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify([{ role: "user", content: input }]),
+        body: JSON.stringify([newMessage]),
       });
 
       if (!response.ok) {
@@ -88,6 +134,10 @@ const Main = ({ user }) => {
         ...prev.slice(0, -1),
         { role: "bot", content: cleanedResult },
       ]);
+
+      if (isBookmarked && conversationId) {
+        await updateBookmarkedConversation(newMessage, cleanedResult);
+      }
     } catch (error) {
       console.error("Error during fetch:", error.message);
       setMessages((prev) => [
@@ -115,17 +165,85 @@ const Main = ({ user }) => {
     router.push("/")
   }
 
+  const handleBookmarkToggle = async () => {
+    setIsBookmarked(!isBookmarked)
+    if (!user) {
+      console.log("User is not logged in");
+      return;
+    }
+
+    if (isBookmarked) {
+      try {
+        const response = await fetch ("api/conversations/delete", {
+          method: "DELETE",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({ 
+            conversationId: conversationId, 
+            userId: user.uid
+          }),
+        });
+        
+        const result = await response.json();
+        if (response.ok) {
+          setIsBookmarked(false);
+          console.log(result.message);
+        } else {
+          console.error(result.error);
+        }
+      } catch (error) {
+        console.error("Error deleting conversation:", error);
+      }
+    } else {
+      try {
+        const response = await fetch("/api/conversations/add", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ 
+            conversation: messages, 
+            userId: user.uid, 
+            name: messages.length > 1 && messages[0].role === "user"
+            ? messages[0].content
+            : "New Conversation"
+          }),
+        });
+
+        const result = await response.json();
+        if (response.ok) {
+          setIsBookmarked(true);
+          console.log(result.message);
+        } else {
+          console.error(result.error);
+        }
+      } catch (error) {
+        console.error("Error adding conversation:", error);
+      }
+    }
+  }
+
+  const handleNewChat = () => {
+    setIsBookmarked(false);
+    setMessages([]);
+  }
+
   return (
     <div className="text-black flex flex-col w-full h-screen">
       {/* Header */}
       <div className="fixed top-0 left-0 w-full h-[50px] flex items-center justify-end p-2 z-10 gap-3 cursor-pointer">
-        <FilePlus2 color="#818183" />
-        <Bookmark color="#818183" />
+        <div onClick = {handleNewChat}>
+          <FilePlus2 color="#818183" />
+        </div>
+        <div onClick = {handleBookmarkToggle}>
+          <Bookmark color={isBookmarked ? "#FFAE42" : "#818183"} />
+        </div>
         <div className="relative">
           <Image
             src={user?.photoURL ? user.photoURL : UserImg}
             alt="User"
-            width={35}  // Specify the width
+            width={35}
             height={35}
             className="rounded-full"
             onClick={handleImageClick}
@@ -148,7 +266,7 @@ const Main = ({ user }) => {
         className="flex-1 w-full max-w-[1000px] m-auto mt-[50px] mb-[60px] flex flex-col overflow-auto scrollbar-hidden"
       >
         {/* Intro Content */}
-        {intro ? (
+        {messages.length === 0 ? (
           <div className="flex-1 flex flex-col justify-center items-center p-4 text-white">
             <div className="">
               <h1 className="dark-gradient-blue text-5xl sm:text-6xl">

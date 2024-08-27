@@ -1,9 +1,10 @@
+import { NextResponse } from "next/server";
 import { db } from "../../../../firebase.js";
-import { doc, addDoc, serverTimestamp } from "firebase/firestore";
+import { doc, addDoc, collection, serverTimestamp } from "firebase/firestore";
 
 export async function POST(req) {
   try {
-    const { conversation, userId, name } = await request.json();
+    const { conversation, userId, name } = await req.json();
     if (!conversation || !userId || !name) {
       return NextResponse.json(
         { error: "Missing userId, conversation, or name" },
