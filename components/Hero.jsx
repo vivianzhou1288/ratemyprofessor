@@ -3,7 +3,7 @@ import React from "react";
 import placeholderDemo from "@/public/demo.png";
 import Link from "next/link";
 
-const Hero = () => {
+const Hero = ({user}) => {
   return (
     <div className="mt-20">
       <h1 className="text-white text-3xl text-center">
@@ -17,7 +17,7 @@ const Hero = () => {
         Your AI-Powered Guide to Smarter Course Choices
       </p>
       <div className="flex gap-5 justify-center">
-        <Link href="/signup">
+        <Link href={user ? ("/dashboard") : ("/signup")}>
           <p className=" w-fit text-white text-[13px] py-3 px-6 rounded-md bg-[#1c1d22] cursor-pointer hover:bg-[#24252a] mt-7 ">
             Get Started For Free
           </p>

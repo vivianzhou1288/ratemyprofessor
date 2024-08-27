@@ -162,6 +162,7 @@ const Main = ({ user, selectedConversation }) => {
 
   const handleLogout = async () => {
     await signOut(auth);
+    localStorage.removeItem("user");
     router.push("/")
   }
 
