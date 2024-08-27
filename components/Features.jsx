@@ -4,7 +4,7 @@ import { MessagesSquare, ScanSearch, Star } from "lucide-react";
 
 const Features = () => {
   return (
-    <div className="mt-40 py-5" id="features">
+    <div className="mt-10 py-5" id="features">
       <p className="text-center text-[#] text-sm py-1 mb-12 px-4 rounded-md gradient-blue ">
         ✦ &nbsp; Explore Our Key Features &nbsp; ✦
       </p>
